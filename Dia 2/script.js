@@ -1,21 +1,34 @@
-var primeroValor = parseInt(prompt("Digite o primeiro valor:"));
-var segundoValor = parseInt(prompt("Digite o segundo valor:"));
-var resultado = 0;
+var pokemon1 = "bulbasaur";
+var pokemon2 = "meowth";
+var pokemon3 = "charmander"
 
-var operacao = prompt("Digite 1 para fazer uma divisão, 2 para multiplicação , 3 para soma e 4 para subtração")
+var feedback1 = document.querySelector("#check1")
+var feedback2 = document.querySelector("#check2")
+var feedback3 = document.querySelector("#check3")
 
-if (operacao == 1) {
-    resultado = primeroValor / segundoValor;
-    document.write("<h2>" + primeroValor + " / " + segundoValor + " = " + resultado + "</h2>")
-} else if (operacao == 2) {
-    resultado = primeroValor * segundoValor;
-    document.write("<h2>" + primeroValor + " x " + segundoValor + " = " + resultado + "</h2>")
-} else if (operacao == 3) {
-    resultado = primeroValor + segundoValor;
-    document.write("<h2>" + primeroValor + " + " + segundoValor + " = " + resultado + "</h2>")
-} else if (operacao == 3) {
-    resultado = primeroValor - segundoValor;
-    document.write("<h2>" + primeroValor + " - " + segundoValor + " = " + resultado + "</h2>")
-} else {
-    document.write("<h2>Opção inválida!</h2>")
-}
+feedback1.addEventListener('click', function () {
+    var name = document.querySelector("#poke1").value.toLowerCase()
+    if (name == "bulbasaur") {
+        document.querySelector("#feedback1").innerHTML = "Você acertou!";
+    } else {
+        document.querySelector("#feedback1").innerHTML = "Você errou!";
+    }
+});
+
+feedback2.addEventListener('click', function () {
+    var name = document.querySelector("#poke2").value.toLowerCase()
+    if (name == "meowth") {
+        document.querySelector("#feedback2").innerHTML = "Você acertou!";
+    } else {
+        document.querySelector("#feedback2").innerHTML = "Você errou!";
+    }
+});
+
+feedback3.addEventListener('click', function () {
+    var name = document.querySelector("#poke3").value.toLowerCase()
+    if (name == "charmander") {
+        document.querySelector("#feedback3").innerHTML = "Você acertou!";
+    } else {
+        document.querySelector("#feedback3").innerHTML = "Você errou!";
+    }
+});

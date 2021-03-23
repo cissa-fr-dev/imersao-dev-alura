@@ -1,19 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto Mono',monospace;
-    min-height: 854px;
-    background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-2-calculadora-certa.png');
-    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://wallpaperaccess.com/full/3952024.png');
+    background-color: #7fad71;
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
 }
   
-.container {
+.title {
     text-align: center;
-    padding: 20px;
-    height: 100vh;
+    padding: 10px;
 }
-  
+ 
 .page-title {
     color: #ffffff;
     margin: 0 0 5px;
@@ -26,15 +31,7 @@ body {
   
 .page-logo {
     width: 200px;
-}
-  
-.calculadora {
-    width: 264px;
-    height:360px;
-    background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-2-calculadora-calc.png');
-    margin: 0 auto;
-    position: relative;
-}
+} 
   
 h2 {
     position: absolute;
@@ -53,12 +50,44 @@ h2 {
     right:10px;
 }
 
-::-webkit-scrollbar {
-    height: 0;
-    width: 6px;    
+
+.container {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-evenly;   
 }
 
-::-webkit-scrollbar-thumb {
-    background: #ffffff83;
+.pokemon-card {
+    background-color: #7fad71;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: solid 1px #000000;
+}
+
+.pokemon-card > img {
+    filter: drop-shadow(2px 4px 10px #000000);
+}
+
+p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.input {
+    height: 28px;
+    width: 200px;
+    border: none;
     border-radius: 5px;
+    font-size: 16px;
+    text-align:center;
+}
+
+.check {
+    height: 28px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
