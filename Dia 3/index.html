@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>
+        Imersão Dev - Aula 03
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Mentalista
+        </h1>
+
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo"
+            alt="">
+
+        <div class="tentativas">
+            <div class="jogador">
+                <p class="page-subtitle">
+                <h2>Jogador 1</h2>
+                </p>
+                <p class="page-subtitle">
+                    Digite um número de 0 a 10
+                </p>
+                <input id="numeroDigitado1">
+                <button class="submit-button" id="botao1">Tentar a sorte</button>
+
+                <p class="resposta" id="resposta1"></p>
+                <p class="numeroSorteado" id="numeroSorteado1"></p>
+            </div>
+
+            <div class="jogador">
+                <p class="page-subtitle">
+                <h2>Jogador 2</h2>
+                </p>
+                <p class="page-subtitle">
+                    Digite um número de 0 a 10
+                </p>
+                <input id="numeroDigitado2">
+                <button class="submit-button" id="botao2">Tentar a sorte</button>
+
+                <p class="resposta" id="resposta2"></p>
+                <p class="numeroSorteado" id="numeroSorteado2"></p>
+            </div>
+        </div>
+
+        <div class="placar">
+            <div class="numeros">
+                <h1 id="placar1"></h1>
+                <h1>X</h1>
+                <h1 id="placar2"></h1>
+            </div>
+            <div>
+                <h1>Placar</h1>
+            </div>
+        </div>
+
+        <button id="reset" class="reset">Resetar placar</button>
+
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
