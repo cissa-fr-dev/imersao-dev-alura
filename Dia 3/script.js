@@ -58,8 +58,8 @@ botao2.addEventListener('click', function () {
     setTimeout(function () {
         while (acertou2 != placarAtual2 || tentativas2 > 3) {
             placarAtual2 = acertou2;
-            tentativas1 = 0;
-            tentativas2 = 0;
+            tentativas1 = 1;
+            tentativas2 = 1;
             limparCampos();
             resetarNumeroSecreto();
         }
