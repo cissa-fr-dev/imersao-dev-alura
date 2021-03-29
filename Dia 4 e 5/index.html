@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Imersão Dev - Aula 4 e 5</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Aluraflix
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+            alt="">
+        <p class="page-subtitle">
+            Sua lista de livros no melhor lugar
+        </p>
+        <div class="form-wrapper">
+            <!-- <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem"> -->
+            <button id="abrir-modal">Adicionar Filme</button>
+        </div>
+
+        <div id="filmes" class="filmes"></div>
+    </div>
+    <div id="listaFilmes"></div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="title">
+                <h3 class="modal-title">Adicionar Filme</h3>
+                <span class="close">x</span>
+            </div>
+
+            <div class="fields">
+                <label><strong>Nome do filme</strong></label>
+                <input id="nomeFilme" placeholder="Nome do filme" required>
+
+                <label><strong>Imagem do filme</strong></label>
+                <input id="imagemFilme" placeholder="Link da imagem" required>
+
+                <label><strong>Trailer do filme</strong></label>
+                <input id="trailerFilme" placeholder="Link do trailer" required>
+            </div>
+
+            <button type="submit" onsubmit="" class="adicionar-filme" onClick="adicionarFilme()">Adicionar
+                Filme</button>
+        </div>
+    </div>
+
+    <div id="modal-detalhes" class="modal-detalhes">
+        <div class="modal-detalhes-content">
+            <span class="close-detalhes">x</span>
+            <div id="fields-detalhes" class="fields-detalhes"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
