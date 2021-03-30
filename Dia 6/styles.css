@@ -1,0 +1,91 @@
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Roboto Mono", monospace;
+    height: 100vh;
+    background-image: url("https://images3.alphacoders.com/822/822553.jpg");
+    background-color: #111;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  table {
+    border: 2px solid white;
+    border-collapse: collapse;
+  }
+  
+  h1 {
+    color: white;
+    padding: 20px;
+  }
+  
+  th,
+  tr,
+  td {
+    border: solid 1px white;
+    color: white;
+    background: rgba(41, 41, 41, 0.507);
+    height: 40px;
+    width: 100px;
+  }
+
+  .pontuacao{
+    width: 40%;
+    margin-right: 50px;
+  }
+  
+  button {
+    padding: 2px;
+    width: 80%;
+    height: 60%;
+    border-radius: 2px;
+  }
+
+  .botao-vitoria {
+    background: rgb(152, 236, 152);
+    border: none;
+  }
+
+  .botao-derrota {
+    background: rgb(247, 126, 126);
+    border: none;
+  }
+
+  .botao-empate {
+    background: rgb(236, 234, 152);
+    border: none;
+  }
