@@ -274,9 +274,7 @@ function escolherCartaMaquina() {
         }
     }
     exibeCartaMaquina(atributoSelecionado, vezMaquina);
-    setTimeout(
-        exibeCartaJogador(atributoSelecionado)
-        , 10000)
+    exibeCartaJogador(atributoSelecionado);
     exibeResultadoDaRodada(atributoSelecionado);
 }
 
@@ -346,7 +344,6 @@ function exibeCartaJogador(atributoSelecionado) {
 
     var corAtributo = "";
     var opcoesTexto = "";
-    var classe = "";
 
     if (cartaJogador.atributos[atributoSelecionado] < cartaMaquina.atributos[atributoSelecionado]) {
         corAtributo = `background: #dc4b4b; border: 1px solid #2f0505;`;
